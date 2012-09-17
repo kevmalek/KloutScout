@@ -1,44 +1,20 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1187
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
-{\colortbl;\red255\green255\blue255;}
-\margl1440\margr1440\vieww9000\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+KloutScout
 
-\f0\b\fs24 \cf0 KloutScout\
+Hello! This app was written in one day as a real world example of my coding abilities at the present time.
+To test, use your twitter username (if you have a klout account setup) or this one: time
 
-\b0 \
-Hello! This app was written in one day as a real world example of my coding abilities at the present time.\
-To test, use your twitter username (if you have a klout account setup) or this one: time\
-\
+Description
+This app retrieves your KloutScout score, the topics you are influential in, the people you influence and the people you are influenced by, packages it up and displays them on a details page for easy viewing.
 
-\b Description
-\b0 \
-This app retrieves your KloutScout score, the topics you are influential in, the people you influence and the people you are influenced by, packages it up and displays them on a details page for easy viewing.\
-\
+QA Checks
+It checks that the json files can be parsed, and makes sure that the twitter name used to gather this data exists.
 
-\b QA Checks\
+LoginViewController.h
+The LoginViewController passes the twitter username to the DetailViewController and also runs a check on the validity of the twitter username through the getScore: method
 
-\b0 It checks that the json files can be parsed, and makes sure that the twitter name used to gather this data exists.\
-\
+DetailViewControler.h
+The DetailViewController pulls the users Klout Score through the getKloutScore: method and checks the users Topics information, who the user is influenced by, and who the user influences through the clickedTopics:, influencedBy:, and clickedInfluencerOf methods respectively.
 
-\b LoginViewController.h\
+ListViewController.h
+The DetailViewController uses this controller to display the UITableView for the Topics, Influencer and influencee's view via UiPopoverController on the iPad or through the UINavigationController on the iPhone.
 
-\b0 The LoginViewController passes the twitter username to the DetailViewController and also runs a check on the validity of the twitter username through the getScore: method\
-\
-
-\b DetailViewControler.h\
-
-\b0 The DetailViewController pulls the users Klout Score through the getKloutScore: method and checks the users Topics information, who the user is influenced by, and who the user influences through the 
-\f1\fs22 \CocoaLigature0 clickedTopics:
-\f0\fs24 \CocoaLigature1 ,
-\f1\fs22 \CocoaLigature0  influencedBy:
-\f0\fs24 \CocoaLigature1 , and
-\f1\fs22 \CocoaLigature0  clickedInfluencerOf
-\f0\fs24 \CocoaLigature1  methods respectively.\
-\
-
-\b ListViewController.h\
-
-\b0 The DetailViewController uses this controller to display the UITableView for the Topics, Influencer and influencee's view via UiPopoverController on the iPad or through the UINavigationController on the iPhone.\
-\
-}
