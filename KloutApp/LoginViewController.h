@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "DetailViewController.h"
+@class UserData;
 
 @interface LoginViewController : UIViewController
 {
@@ -16,7 +17,7 @@
 }
 
 @property (nonatomic, copy) NSString *twitterUserName;
-//@property (nonatomic, strong) UserData *userData;
+@property (nonatomic, strong) UserData *userData;
 
 - (IBAction)getScore:(id)sender;
 @end

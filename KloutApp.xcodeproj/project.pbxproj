@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9F1E02BA15FFE18100D91025 /* ReadMe.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 9F1E02B915FFE18100D91025 /* ReadMe.rtf */; };
+		9F749BE216079703000CBF58 /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F749BE116079703000CBF58 /* UserData.m */; };
 		9F994B9015FE4CD8000A8A6C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F994B8F15FE4CD8000A8A6C /* UIKit.framework */; };
 		9F994B9215FE4CD8000A8A6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F994B9115FE4CD8000A8A6C /* Foundation.framework */; };
 		9F994B9415FE4CD8000A8A6C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F994B9315FE4CD8000A8A6C /* CoreGraphics.framework */; };
@@ -23,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		9F1E02B915FFE18100D91025 /* ReadMe.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = ReadMe.rtf; sourceTree = "<group>"; };
+		9F749BE016079703000CBF58 /* UserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
+		9F749BE116079703000CBF58 /* UserData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserData.m; sourceTree = "<group>"; };
 		9F994B8B15FE4CD8000A8A6C /* KloutApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KloutApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F994B8F15FE4CD8000A8A6C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9F994B9115FE4CD8000A8A6C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -88,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				9F1E02B915FFE18100D91025 /* ReadMe.rtf */,
+				9F749BE016079703000CBF58 /* UserData.h */,
+				9F749BE116079703000CBF58 /* UserData.m */,
 				9F994B9E15FE4CD8000A8A6C /* AppDelegate.h */,
 				9F994B9F15FE4CD8000A8A6C /* AppDelegate.m */,
 				9F994BE415FE4E86000A8A6C /* LoginViewController.h */,
@@ -184,6 +189,7 @@
 				9F994BE715FE4E86000A8A6C /* LoginViewController.m in Sources */,
 				9F994BF815FE5C80000A8A6C /* DetailViewController.m in Sources */,
 				9F994C4F15FF1BDF000A8A6C /* ListViewController.m in Sources */,
+				9F749BE216079703000CBF58 /* UserData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

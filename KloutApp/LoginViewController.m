@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewController.h"
+#import "UserData.h"
 
 @interface LoginViewController ()
 
@@ -18,8 +19,10 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+    if (self)
+	{
+		// Custom initialization
+		_userData = [[UserData alloc] init];
     }
     return self;
 }
@@ -53,11 +56,17 @@
 
 - (IBAction)getScore:(id)sender
 {
+	
+	[[self userData] setUserName:[twitterTextField text]];
+	
 	DetailViewController *dvc = [[DetailViewController alloc] init];
 
-	[dvc setUserName:[twitterTextField text]];
-
-	NSString *str = [NSString stringWithFormat:@"http://api.twitter.com/1/users/show.json?screen_name=%@", [twitterTextField text]];
+//	[dvc setUserName:[twitterTextField text]];
+	[dvc setUserName:[[self userData] userName]];
+	
+//	NSString *str = [NSString stringWithFormat:@"http://api.twitter.com/1/users/show.json?screen_name=%@", [twitterTextField text]];
+	NSString *str = [NSString stringWithFormat:@"http://api.twitter.com/1/users/show.json?screen_name=%@", [[self userData] userName]];
+	
 	NSURL *url = [NSURL URLWithString:str];
 	NSData *urlContents = [NSData dataWithContentsOfURL:url];
 	//Is the URL valid? If so, continue...
